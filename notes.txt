@@ -10,3 +10,6 @@ Sharing work in progress
 -now - copies files to external node server
 -surge - copies fiels to external static server
 
+NPM automation
+add scripts to "scripts" section of package.json
+use >npm run security-check
