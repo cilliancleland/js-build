@@ -1,0 +1,12 @@
+to check for security - >nsp check
+to run express - >node buildScripts\srcServer.js
+
+use browserSync to serve teh same webpage to multiple devices, even over localtunnel
+
+
+Sharing work in progress
+-localtunnel - off the machine(easy)
+-ngrok - off the machine (secure)
+-now - copies files to external node server
+-surge - copies fiels to external static server
+
