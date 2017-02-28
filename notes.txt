@@ -13,3 +13,7 @@ Sharing work in progress
 NPM automation
 add scripts to "scripts" section of package.json
 use >npm run security-check
+
+CI servers
+Appveyor
+travis-CI
