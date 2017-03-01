@@ -1,8 +1,9 @@
 import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
   debug: true,
-  devtoop: 'inline-source-map',
+  devtool: 'inline-source-map',
   noInfo: false,
   entry: [
     path.resolve(__dirname, 'src/index')
@@ -16,7 +17,12 @@ export default {
   devServer: {
     contentBase: path.resolve(__dirname, 'src')
   },
-  plugins: [],
+  plugins: [
+    //create HTML file that includes reference to bundled js
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+      inject: true
+    })],
   module: {
     loaders: [
       {test: /\.js$/, exclude: /node_modules/, loaders: ['babel']},
